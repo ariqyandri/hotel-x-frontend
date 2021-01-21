@@ -1,0 +1,22 @@
+.hide-navbar {
+  opacity: 0;
+}
+
+.unhide-navbar {
+  transition: all 1s ease-in;
+  opacity: 1;
+}
+
+main .navbar-brand {
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .navbar-expand-md .navbar-nav {
+    justify-content: flex-end;
+  }
+}

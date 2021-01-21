@@ -3,7 +3,7 @@ const initialState = [];
 const categoriesReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case "DISPLAY_CATEGORIES":
-      return { ...state, ...payload };
+      return [...state, ...payload];
     default:
       return state;
   }

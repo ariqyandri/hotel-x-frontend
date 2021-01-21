@@ -4,10 +4,8 @@ import { NavLink } from "react-router-dom";
 
 export default function NavbarItem(props) {
   return (
-    <Nav.Item>
-      <Nav.Link as={NavLink} exact to={props.path}>
-        {props.linkText}
-      </Nav.Link>
-    </Nav.Item>
+    <Nav.Link as={NavLink} exact to={props.path}>
+      {props.linkText}
+    </Nav.Link>
   );
 }
