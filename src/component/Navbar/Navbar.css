@@ -23,6 +23,7 @@ nav h1 {
   text-shadow: 0.05em 0.05em 0.1em black;
   color: white;
   font-size: 4rem;
+  font-weight: bolder;
 }
 
 main .navbar-light .navbar-nav .nav-link {
