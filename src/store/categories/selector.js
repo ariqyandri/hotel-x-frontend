@@ -1,1 +1,3 @@
-export const selectCategories = (state) => state.categories;
+export const selectCategories = (state) => {
+  return state.categories;
+};

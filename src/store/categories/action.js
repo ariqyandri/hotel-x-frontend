@@ -14,6 +14,7 @@ export const fetchCategories = () => {
     dispatch(appLoading());
     try {
       const response = await axios.get(`${apiUrl}/categories`);
+      console.log("this runs");
       dispatch(displayCategories(response.data));
       dispatch(appDoneLoading());
     } catch (error) {

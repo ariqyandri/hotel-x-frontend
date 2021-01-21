@@ -1,6 +1,6 @@
 const initialState = [];
 
-const reducer = (state = initialState, { type, payload }) => {
+const categoriesReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case "DISPLAY_CATEGORIES":
       return { ...state, ...payload };
@@ -9,4 +9,4 @@ const reducer = (state = initialState, { type, payload }) => {
   }
 };
 
-export default reducer;
+export default categoriesReducer;

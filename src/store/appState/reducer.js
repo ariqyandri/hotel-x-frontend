@@ -10,7 +10,7 @@ const initialState = {
   message: null,
 };
 
-const reducer = (state = initialState, action) => {
+const appStateReducer = (state = initialState, action) => {
   switch (action.type) {
     case APP_LOADING:
       return { ...state, loading: true };
@@ -29,4 +29,4 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+export default appStateReducer;
