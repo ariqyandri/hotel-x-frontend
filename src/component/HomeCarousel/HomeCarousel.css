@@ -1,32 +1,43 @@
 .carousel-item img {
   object-fit: cover;
-  max-height: 500px;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .carousel-item h1 {
   text-shadow: 0.05em 0.05em 0.1em black;
   color: white;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: lighter;
+  width: fit-content;
+  margin: auto;
 }
 
-.carousel-item h3 {
+.carousel-item p {
   text-shadow: 0.05em 0.05em 0.1em black;
   color: white;
-  font-weight: lighter;
+  font-size: 2rem;
+  width: fit-content;
+  margin: auto;
   opacity: 0;
   transition: opacity 0.3s, font-weight 0.3s;
 }
 
-.carousel-item:hover h3,
-.carousel-item:active h3,
-.carousel-item:focus h3 {
+.carousel-item:hover h1,
+.carousel-item:active h1,
+.carousel-item:focus h1 {
+  cursor: pointer;
+}
+
+.carousel-item:hover p,
+.carousel-item:active p,
+.carousel-item:focus p {
   cursor: pointer;
   opacity: 1;
 }
 
-.carousel-item h3:hover,
-.carousel-item h3:hover,
-.carousel-item h3:hover {
+.carousel-item p:hover,
+.carousel-item p:hover,
+.carousel-item p:hover {
   font-weight: bolder;
 }

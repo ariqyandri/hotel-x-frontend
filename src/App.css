@@ -3,6 +3,10 @@
   font-family: "Bodoni Moda", serif;
 }
 
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

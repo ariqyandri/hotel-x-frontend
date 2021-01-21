@@ -12,6 +12,11 @@ export default function HomePage() {
   return (
     <div>
       <HomeCarousel categories={categories} />
+      <main>
+        <div>
+          <h1>Welcome to Hotel X Amsterdam</h1>
+        </div>
+      </main>
     </div>
   );
 }

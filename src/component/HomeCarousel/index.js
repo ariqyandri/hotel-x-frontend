@@ -10,11 +10,11 @@ export default function HomeCarousel({ categories }) {
         {categories.map(({ name, imageUrl, description }) => {
           return (
             <Carousel.Item>
-              <img className="d-block w-100 height" src={imageUrl} alt={name} />
+              <img className="d-block w-100 " src={imageUrl} alt={name} />
               <Carousel.Caption>
                 <h1>{name}</h1>
                 <b />
-                <h3>Visit Page</h3>
+                <p>Visit Page</p>
               </Carousel.Caption>
             </Carousel.Item>
           );
