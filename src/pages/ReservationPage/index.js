@@ -1,27 +1,22 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import DisplayCategory from "../../component/DisplayCategories";
-import HomeCarousel from "../../component/HomeCarousel";
-import HomeWelcome from "../../component/HomeWelcome";
+import CategoryHeader from "../../component/CategoryHeader";
 import Loading from "../../component/Loading";
-import { selectAbout } from "../../store/about/selector";
 import { selectCategories } from "../../store/categories/selector";
 
-export default function ReservationPage() {
+export default function FacilitiesPage() {
   const categories = useSelector(selectCategories);
-  const about = useSelector(selectAbout);
   if (categories.length === 0) {
     return <Loading />;
   }
+  const info = categories.find((c) => c.name === "Reservation");
+
   return (
-    <div>
+    <div className="page-margin">
       <header>
-        <HomeCarousel categories={categories} />
+        <CategoryHeader info={info} />
       </header>
-      <main className="page-margin">
-        <HomeWelcome categories={categories} about={about} />
-        <DisplayCategory categories={categories} />
-      </main>
+      <h1 style={{ lineHeight: "11.5em" }}>Feature Coming Soon</h1>
     </div>
   );
 }

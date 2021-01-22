@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import CategoryHeader from "../../component/CategoryHeader";
-import DisplayCategory from "../../component/DisplayCategories";
 import DisplayFacilities from "../../component/DisplayFacilities";
 import Loading from "../../component/Loading";
 import { selectCategories } from "../../store/categories/selector";
