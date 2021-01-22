@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import DisplayCategory from "../../component/DisplayCategory";
+import DisplayCategory from "../../component/DisplayCategories";
 import HomeCarousel from "../../component/HomeCarousel";
 import HomeWelcome from "../../component/HomeWelcome";
 import Loading from "../../component/Loading";
