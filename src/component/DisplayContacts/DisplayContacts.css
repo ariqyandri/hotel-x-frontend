@@ -9,9 +9,21 @@
   height: fit-content;
 }
 
+.display-contacts .contact:hover {
+  cursor: pointer;
+}
+
 .display-contacts .contact img {
   max-width: 50px;
   margin-bottom: 0.6em;
+}
+
+.display-contacts .contact a {
+  color: inherit;
+}
+.display-contacts .contact a:hover {
+  text-decoration: none;
+  color: gray;
 }
 
 .display-contacts .contact p {

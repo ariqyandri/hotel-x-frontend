@@ -15,7 +15,7 @@ export default function DisplayAttractions({ attractions }) {
                 <h1>{name}</h1>
                 <h3>{address}</h3>
                 <p>{description}</p>
-                <h4>
+                <h4 className="hvr-grow">
                   <a href={linkUrl}>Visit</a>
                 </h4>
               </div>

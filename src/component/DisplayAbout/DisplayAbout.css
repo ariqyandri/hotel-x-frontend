@@ -56,3 +56,9 @@
 .display-about .content-info h4 {
   text-transform: capitalize;
 }
+
+.display-about .content-info > div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
