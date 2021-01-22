@@ -1,4 +1,19 @@
 .display-contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+.display-contacts .contact {
+  margin: 1em;
+  height: fit-content;
+}
+
+.display-contacts .contact img {
+  max-width: 50px;
+  margin-bottom: 0.6em;
+}
+
+.display-contacts .contact p {
+  margin-bottom: 0;
 }

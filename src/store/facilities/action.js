@@ -2,7 +2,7 @@ import { apiUrl } from "../../config/constants";
 import axios from "axios";
 import { appDoneLoading, appLoading, setMessage } from "../appState/actions";
 
-export const displayFacilities = (facilites) => {
+export const displayFacilities = (facilities) => {
   return {
     type: "DISPLAY_FACILITIES",
     payload: facilities,

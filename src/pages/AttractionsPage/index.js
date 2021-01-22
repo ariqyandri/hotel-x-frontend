@@ -1,32 +1,27 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import DisplayCategory from "../../component/DisplayCategories";
+import React from "react";
+import { useSelector } from "react-redux";
+import CategoryHeader from "../../component/CategoryHeader";
+import DisplayAttractions from "../../component/DisplayAttractions";
 import Loading from "../../component/Loading";
-import { fetchAttractions } from "../../store/attractions/action";
 import { selectAttractions } from "../../store/attractions/selector";
 import { selectCategories } from "../../store/categories/selector";
+import "./AttractionsPage.css";
 
 export default function AttractionsPage() {
-  const dispatch = useDispatch;
   const categories = useSelector(selectCategories);
   const attractions = useSelector(selectAttractions);
-  useEffect(() => {
-    dispatch(fetchAttractions());
-  }, [dispatch]);
   if (categories.length === 0) {
     return <Loading />;
   }
-  const { name, description, imageUrl } = categories.find(
-    (c) => c.name === "Attractions"
-  );
+  const info = categories.find((c) => c.name === "Attractions");
 
   return (
-    <div className="attraction-page">
+    <div className="page-margin">
       <header>
-        <img src={imageUrl} alt={name} />
+        <CategoryHeader info={info} />
       </header>
       <main className="page-margin">
-        <DisplayCategory categories={categories} />
+        <DisplayAttractions attractions={attractions} />
       </main>
     </div>
   );

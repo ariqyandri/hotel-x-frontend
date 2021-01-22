@@ -6,12 +6,12 @@ export default function DisplayContacts({ contacts }) {
     <div className="display-contacts">
       {contacts.map(({ platform, info, iconUrl }, i) => {
         return (
-          <div key={i}>
+          <div className="contact" key={i}>
             <div className="contact-icon">
               <img src={iconUrl} alt={platform} />
             </div>
             <div className="contact-info">
-              <h2>{platform}</h2>
+              <h4>{platform}</h4>
               <p>{info}</p>
             </div>
           </div>

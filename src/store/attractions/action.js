@@ -14,6 +14,7 @@ export const fetchAttractions = () => {
     dispatch(appLoading());
     try {
       const response = await axios.get(`${apiUrl}/attractions`);
+      console.log(response.data);
       dispatch(displayAttractions(response.data));
       dispatch(appDoneLoading());
     } catch (error) {

@@ -1,25 +1,25 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import CategoryHeader from "../../component/CategoryHeader";
 import DisplayCategory from "../../component/DisplayCategories";
-import HomeCarousel from "../../component/HomeCarousel";
-import HomeWelcome from "../../component/HomeWelcome";
 import Loading from "../../component/Loading";
-import { selectAbout } from "../../store/about/selector";
 import { selectCategories } from "../../store/categories/selector";
+import { selectFacilities } from "../../store/facilities/selector";
 
 export default function FacilitiesPage() {
   const categories = useSelector(selectCategories);
-  const about = useSelector(selectAbout);
+  const facilities = useSelector(selectFacilities);
   if (categories.length === 0) {
     return <Loading />;
   }
+  const info = categories.find((c) => c.name === "Facilities");
+
   return (
-    <div>
+    <div className="page-margin">
       <header>
-        <HomeCarousel categories={categories} />
+        <CategoryHeader info={info} />
       </header>
-      <main className="page-margin">
-        <HomeWelcome categories={categories} about={about} />
+      <main>
         <DisplayCategory categories={categories} />
       </main>
     </div>

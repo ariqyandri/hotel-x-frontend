@@ -11,7 +11,7 @@ export default function Footer() {
   const contacts = useSelector(selectContacts);
   const { address, phone, email } = about;
   if (loading) {
-    return <div></div>;
+    return null;
   }
   return (
     <div className="footer">
@@ -29,7 +29,7 @@ export default function Footer() {
         <section>
           {contacts.map(({ platform, info, linkUrl }, i) => {
             if (platform === "Telephone" || platform === "Email") {
-              return;
+              return null;
             }
             return (
               <p key={i}>

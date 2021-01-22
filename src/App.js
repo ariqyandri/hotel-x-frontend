@@ -13,11 +13,15 @@ import AboutPage from "./pages/AboutPage/index";
 import ContactPage from "./pages/ContactPage/index";
 import ReservationPage from "./pages/ReservationPage";
 import Footer from "./component/Footer/index";
+import { fetchAttractions } from "./store/attractions/action";
+import { fetchFacilities } from "./store/facilities/action";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(initialFetch());
+    dispatch(fetchAttractions());
+    dispatch(fetchFacilities());
   }, [dispatch]);
   return (
     <div className="App">
