@@ -9,10 +9,20 @@ export default function DisplayAbout({ about }) {
         <div className="content-image">
           <img src={imageUrl} alt={name} />
         </div>
-        <div className="content-info">
-          <h1>{name}</h1>
-          <p>{description}</p>
-          <h4>Visit</h4>
+        <div className="page-margin">
+          <div className="content-info">
+            <h1>About Us</h1>
+            <h3>{slogan}</h3>
+            <p>{description}</p>
+            {[{ address }, { phone }, { email }].map((info, i) => {
+              return (
+                <div key={i}>
+                  <h4>{Object.keys(info)[0]}</h4>
+                  <p>{info[`${Object.keys(info)[0]}`]}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

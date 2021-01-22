@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import DisplayAbout from "../../component/DisplayAbout";
 import Loading from "../../component/Loading";
 import { selectAbout } from "../../store/about/selector";
+import "./AboutPage.css";
 
 export default function AboutPage() {
   const about = useSelector(selectAbout);
@@ -11,7 +12,7 @@ export default function AboutPage() {
   }
   return (
     <div>
-      <main className="page-margin">
+      <main>
         <DisplayAbout about={about} />
       </main>
     </div>
