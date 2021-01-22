@@ -1,10 +1,10 @@
-.carousel-item img {
+.home-carousel .carousel-item img {
   object-fit: cover;
   min-height: 100vh;
   max-height: 100vh;
 }
 
-.carousel-item h1 {
+.home-carousel .carousel-item h1 {
   text-shadow: 0.05em 0.05em 0.1em black;
   color: white;
   font-size: 3.5rem;
@@ -13,7 +13,7 @@
   margin: auto;
 }
 
-.carousel-item p {
+.home-carousel .carousel-item p {
   text-shadow: 0.05em 0.05em 0.1em black;
   color: white;
   font-size: 2rem;
@@ -23,20 +23,20 @@
   transition: font-weight 0.3s;
 }
 
-.carousel-item:hover h1,
-.carousel-item:active h1,
-.carousel-item:focus h1 {
+.home-carousel .carousel-item:hover h1,
+.home-carousel .carousel-item:active h1,
+.home-carousel .carousel-item:focus h1 {
   cursor: pointer;
 }
 
-.carousel-item:hover p,
-.carousel-item:active p,
-.carousel-item:focus p {
+.home-carousel .carousel-item:hover p,
+.home-carousel .carousel-item:active p,
+.home-carousel .carousel-item:focus p {
   cursor: pointer;
 }
 
-.carousel-item p:hover,
-.carousel-item p:hover,
-.carousel-item p:hover {
+.home-carousel .carousel-item p:hover,
+.home-carousel .carousel-item p:hover,
+.home-carousel .carousel-item p:hover {
   font-weight: bolder;
 }

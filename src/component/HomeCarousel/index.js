@@ -5,7 +5,7 @@ import "./HomeCarousel.css";
 export default function HomeCarousel({ categories }) {
   console.log(categories);
   return (
-    <div>
+    <div className="home-carousel">
       <Carousel wrap={true} interval={5000}>
         {categories.map(({ name, imageUrl, description }, i) => {
           return (

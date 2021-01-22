@@ -1,5 +1,5 @@
 import React from "react";
-import DisplayRoomFacilities from "../DisplayRoomFacilities";
+import { Carousel } from "react-bootstrap";
 import "./DisplayRooms.css";
 
 export default function DisplayRooms({ rooms }) {
@@ -7,11 +7,22 @@ export default function DisplayRooms({ rooms }) {
     <div>
       {rooms
         .sort((a, b) => a.id - b.id)
-        .map(({ name, description, priceEuro, imageUrl, facilities }, i) => {
+        .map(({ name, description, priceEuro, roomImages, facilities }, i) => {
           return (
             <div key={i} className="display-rooms">
               <div className="content-image">
-                <img src={imageUrl} alt={name} />
+                <Carousel
+                  wrap={true}
+                  interval={Math.floor(Math.random() * (4000 - 2500) + 2500)}
+                >
+                  {roomImages.map(({ title, url }, i) => {
+                    return (
+                      <Carousel.Item key={i}>
+                        <img src={url} alt={title} />
+                      </Carousel.Item>
+                    );
+                  })}
+                </Carousel>{" "}
               </div>
               <div className="content-info">
                 <title>
