@@ -31,6 +31,7 @@ main .navbar-light .navbar-nav .nav-link {
   color: white;
   font-weight: 600;
   font-size: 1.2rem;
+  font-weight: bolder;
   border-bottom: #ffffff00 0.2em solid;
   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0);
 }

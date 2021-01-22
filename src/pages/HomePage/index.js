@@ -21,13 +21,7 @@ export default function HomePage() {
       </header>
       <main className="page-margin">
         <HomeWelcome categories={categories} about={about} />
-        {categories.map((c, i) => {
-          return (
-            <div key={i}>
-              <DisplayCategory category={c} />
-            </div>
-          );
-        })}
+        <DisplayCategory categories={categories} />
       </main>
     </div>
   );
