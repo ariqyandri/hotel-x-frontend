@@ -15,6 +15,8 @@ import ReservationPage from "./pages/ReservationPage";
 import Footer from "./component/Footer/index";
 import { fetchAttractions } from "./store/attractions/action";
 import { fetchFacilities } from "./store/facilities/action";
+import ScrollToTop from "./config/scrollToTop";
+import { fetchRooms } from "./store/rooms/action";
 
 function App() {
   const dispatch = useDispatch();
@@ -22,6 +24,7 @@ function App() {
     dispatch(initialFetch());
     dispatch(fetchAttractions());
     dispatch(fetchFacilities());
+    dispatch(fetchRooms());
   }, [dispatch]);
   return (
     <div className="App">
@@ -29,6 +32,7 @@ function App() {
         <Navbar />
       </header>
       <body>
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/rooms/:type?" component={RoomsPage} />

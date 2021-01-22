@@ -5,6 +5,7 @@ import about from "./about/reducer";
 import contacts from "./contacts/reducer";
 import attractions from "./attractions/reducer";
 import facilities from "./facilities/reducer";
+import rooms from "./rooms/reducer";
 
 const reducer = combineReducers({
   appState,
@@ -13,6 +14,7 @@ const reducer = combineReducers({
   contacts,
   attractions,
   facilities,
+  rooms,
 });
 
 export default reducer;

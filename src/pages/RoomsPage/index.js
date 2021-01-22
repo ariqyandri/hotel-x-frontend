@@ -1,26 +1,26 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import DisplayCategory from "../../component/DisplayCategories";
-import HomeCarousel from "../../component/HomeCarousel";
-import HomeWelcome from "../../component/HomeWelcome";
+import CategoryHeader from "../../component/CategoryHeader";
+import DisplayRooms from "../../component/DisplayRooms";
 import Loading from "../../component/Loading";
-import { selectAbout } from "../../store/about/selector";
 import { selectCategories } from "../../store/categories/selector";
+import { selectRooms } from "../../store/rooms/selector";
 
 export default function RoomsPage() {
   const categories = useSelector(selectCategories);
-  const about = useSelector(selectAbout);
+  const rooms = useSelector(selectRooms);
   if (categories.length === 0) {
     return <Loading />;
   }
+  const info = categories.find((c) => c.name === "Rooms");
+
   return (
-    <div>
+    <div className="page-margin">
       <header>
-        <HomeCarousel categories={categories} />
+        <CategoryHeader info={info} />
       </header>
       <main className="page-margin">
-        <HomeWelcome categories={categories} about={about} />
-        <DisplayCategory categories={categories} />
+        <DisplayRooms rooms={rooms} />
       </main>
     </div>
   );

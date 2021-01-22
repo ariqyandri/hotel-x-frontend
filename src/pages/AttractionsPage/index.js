@@ -5,7 +5,6 @@ import DisplayAttractions from "../../component/DisplayAttractions";
 import Loading from "../../component/Loading";
 import { selectAttractions } from "../../store/attractions/selector";
 import { selectCategories } from "../../store/categories/selector";
-import "./AttractionsPage.css";
 
 export default function AttractionsPage() {
   const categories = useSelector(selectCategories);

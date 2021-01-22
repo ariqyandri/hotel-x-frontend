@@ -43,6 +43,16 @@
   text-align: center;
 }
 
+.display-category .content-info a {
+  color: gray;
+}
+
+.display-category .content-info h4 a:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
 .display-category .content-info:hover {
   border: 0.1em solid black;
 }

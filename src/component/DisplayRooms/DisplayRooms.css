@@ -1,4 +1,4 @@
-.display-attractions {
+.display-rooms {
   float: left;
   width: 100%;
   margin: 30px 0;
@@ -6,7 +6,7 @@
   text-align: left;
 }
 
-.display-attractions .content-image {
+.display-rooms .content-image {
   width: 60%;
   float: left;
   margin: 0 0 0 2%;
@@ -14,16 +14,16 @@
   box-shadow: 0px 10px 13px -7px #000000;
 }
 
-.display-attractions .content-image img {
+.display-rooms .content-image img {
   width: 100%;
 }
 
-.display-attractions:nth-child(even) .content-info {
+.display-rooms:nth-child(even) .content-info {
   left: 2%;
   right: 55%;
 }
 
-.display-attractions .content-info {
+.display-rooms .content-info {
   position: absolute;
   top: 5%;
   left: 55%;
@@ -40,32 +40,42 @@
   min-height: fit-content;
 }
 
-.display-attractions .content-info h3 {
-  font-size: 1.2em;
+.display-rooms .content-info title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-rooms .content-info title .price {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.display-rooms .content-info h3 {
+  font-size: 2em;
   color: gray;
   font-style: italic;
 }
 
-.display-attractions .content-info h4 {
+.display-rooms .content-info h4 {
   text-align: center;
 }
 
-.display-attractions .content-info a {
+.display-rooms .content-info a {
   color: gray;
 }
 
-.display-attractions .content-info h4 a:hover {
+.display-rooms .content-info h4 a:hover {
   text-decoration: none;
   font-weight: 700;
 }
 
-.display-attractions .content-info:hover {
+.display-rooms .content-info:hover {
   border: 0.1em solid black;
 }
 
 @media (max-width: 1100px) {
-  .display-attractions .content-info,
-  .display-attractions:nth-child(even) .content-info {
+  .display-rooms .content-info,
+  .display-rooms:nth-child(even) .content-info {
     position: relative;
     left: auto;
     bottom: auto;
@@ -77,13 +87,13 @@
   }
 }
 
-.display-attractions:nth-child(even) .content-image {
+.display-rooms:nth-child(even) .content-image {
   float: right;
   margin: 0 2% 0 0;
 }
 
 @media (max-width: 1100px) {
-  .display-attractions .content-image {
+  .display-rooms .content-image {
     width: 96%;
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./DisplayCategory.css";
 
 export default function DisplayCategory({ categories }) {
@@ -13,7 +14,9 @@ export default function DisplayCategory({ categories }) {
             <div className="content-info">
               <h1>{name}</h1>
               <p>{description}</p>
-              <h4>Visit</h4>
+              <h4>
+                <Link to={`/${name.toLowerCase()}`}>Visit</Link>
+              </h4>
             </div>
           </div>
         );
