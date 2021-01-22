@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function DisplayCategory({category}) {
+export default function DisplayCategory({categories}) {
   return <div></div>;
 }

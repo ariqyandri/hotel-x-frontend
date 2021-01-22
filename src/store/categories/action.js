@@ -1,6 +1,7 @@
 import { apiUrl } from "../../config/constants";
 import axios from "axios";
 import { appDoneLoading, appLoading, setMessage } from "../appState/actions";
+import { displayAbout } from "../about/action";
 
 const displayCategories = (categories) => {
   return {
@@ -15,7 +16,8 @@ export const fetchCategories = () => {
     try {
       const response = await axios.get(`${apiUrl}/categories`);
       console.log("this runs");
-      dispatch(displayCategories(response.data));
+      dispatch(displayCategories(response.data.categories));
+      dispatch(displayAbout(response.data.about[0]));
       dispatch(appDoneLoading());
     } catch (error) {
       if (error.response) {
