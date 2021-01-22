@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import DisplayCategory from "../../component/DisplayCategory";
+import DisplayCategories from "../../component/DisplayCategories";
 import HomeCarousel from "../../component/HomeCarousel";
 import HomeWelcome from "../../component/HomeWelcome";
 import Loading from "../../component/Loading";
@@ -21,7 +21,7 @@ export default function HomePage() {
       </header>
       <main className="page-margin">
         <HomeWelcome categories={categories} about={about} />
-        <DisplayCategory categories={categories} />
+        <DisplayCategories categories={categories} />
       </main>
     </div>
   );

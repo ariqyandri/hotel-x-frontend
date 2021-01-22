@@ -1,19 +1,18 @@
 import React from "react";
-import "./DisplayCategory.css";
+import "./DisplayFacilities.css";
 
-export default function DisplayCategory({ categories }) {
+export default function DisplayFacilities({ facilities }) {
   return (
     <div>
-      {categories.map(({ name, description, imageUrl }, i) => {
+      {facilities.map(({ name, description, imageUrl }, i) => {
         return (
-          <div key={i} className="display-category">
+          <div key={i} className="display-facilities">
             <div className="content-image">
               <img src={imageUrl} alt={name} />
             </div>
             <div className="content-info">
               <h1>{name}</h1>
               <p>{description}</p>
-              <h4>Visit</h4>
             </div>
           </div>
         );

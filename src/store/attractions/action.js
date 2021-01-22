@@ -1,24 +1,21 @@
 import { apiUrl } from "../../config/constants";
 import axios from "axios";
 import { appDoneLoading, appLoading, setMessage } from "../appState/actions";
-import { displayAbout } from "../about/action";
-import { displayContacts } from "../contacts/action";
 
-const displayCategories = (categories) => {
+export const displayAttractions = (attractions) => {
   return {
-    type: "DISPLAY_CATEGORIES",
-    payload: categories,
+    type: "DISPLAY_ATTRACTIONS",
+    payload: attractions,
   };
 };
 
-export const initialFetch = () => {
+export const fetchAttractions = () => {
   return async (dispatch, getState) => {
     dispatch(appLoading());
     try {
-      const response = await axios.get(`${apiUrl}/categories`);
-      dispatch(displayCategories(response.data.categories));
-      dispatch(displayAbout(response.data.about[0]));
-      dispatch(displayContacts(response.data.contacts));
+      const response = await axios.get(`${apiUrl}/attractions`);
+      console.log(response.data);
+      dispatch(displayAttractions(response.data));
       dispatch(appDoneLoading());
     } catch (error) {
       if (error.response) {

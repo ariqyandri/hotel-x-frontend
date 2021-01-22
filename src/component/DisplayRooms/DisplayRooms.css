@@ -1,0 +1,100 @@
+.display-rooms {
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+  position: relative;
+  text-align: left;
+}
+
+.display-rooms .content-image {
+  width: 60%;
+  height: 20%;
+  float: left;
+  margin: 0 0 0 2%;
+  z-index: 1;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.display-rooms .content-image img {
+  width: 100%;
+}
+
+.display-rooms:nth-child(even) .content-info {
+  left: 2%;
+  right: 55%;
+}
+
+.display-rooms .content-info {
+  position: absolute;
+  top: 5%;
+  left: 55%;
+  right: 2%;
+  bottom: 5%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 2;
+  padding: 2em 4em;
+  border: 0.1em solid white;
+  box-shadow: 0px 10px 13px -7px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+}
+
+.display-rooms .content-info title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-rooms .content-info title .price {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.display-rooms .content-info h3 {
+  font-size: 2em;
+  color: gray;
+  font-style: italic;
+}
+
+.display-rooms .content-info h4 {
+  text-align: center;
+}
+
+.display-rooms .content-info a {
+  color: gray;
+}
+
+.display-rooms .content-info h4 a:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.display-rooms .content-info:hover {
+  border: 0.1em solid black;
+}
+
+@media (max-width: 1100px) {
+  .display-rooms .content-info,
+  .display-rooms:nth-child(even) .content-info {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    top: auto;
+    float: left;
+    width: 92%;
+    margin: -4% 4% 0 4%;
+  }
+}
+
+.display-rooms:nth-child(even) .content-image {
+  float: right;
+  margin: 0 2% 0 0;
+}
+
+@media (max-width: 1100px) {
+  .display-rooms .content-image {
+    width: 96%;
+  }
+}

@@ -1,24 +1,21 @@
 import { apiUrl } from "../../config/constants";
 import axios from "axios";
 import { appDoneLoading, appLoading, setMessage } from "../appState/actions";
-import { displayAbout } from "../about/action";
-import { displayContacts } from "../contacts/action";
 
-const displayCategories = (categories) => {
+export const displayRooms = (rooms) => {
   return {
-    type: "DISPLAY_CATEGORIES",
-    payload: categories,
+    type: "DISPLAY_ROOMS",
+    payload: rooms,
   };
 };
 
-export const initialFetch = () => {
+export const fetchRooms = () => {
   return async (dispatch, getState) => {
     dispatch(appLoading());
     try {
-      const response = await axios.get(`${apiUrl}/categories`);
-      dispatch(displayCategories(response.data.categories));
-      dispatch(displayAbout(response.data.about[0]));
-      dispatch(displayContacts(response.data.contacts));
+      const response = await axios.get(`${apiUrl}/rooms`);
+      console.log(response.data);
+      dispatch(displayRooms(response.data));
       dispatch(appDoneLoading());
     } catch (error) {
       if (error.response) {
