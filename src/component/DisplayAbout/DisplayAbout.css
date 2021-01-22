@@ -17,14 +17,9 @@
 }
 
 .display-about .content-info {
-  position: relative;
-  left: auto;
-  bottom: auto;
-  right: auto;
-  top: auto;
+  position: absolute;
+  top: 120px;
   float: left;
-  width: 92%;
-  margin: -52rem 4% 0 4%;
   background: rgba(255, 255, 255, 0.95);
   z-index: 2;
   padding: 2em 2em;

@@ -1,9 +1,15 @@
-.App {
+.App,
+.App body {
   text-align: center;
   font-family: "Bodoni Moda", serif;
 }
 
-p {
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+body p {
   font-family: "Work Sans", sans-serif;
 }
 

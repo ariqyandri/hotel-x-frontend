@@ -12,6 +12,7 @@ import FacilitiesPage from "./pages/FacilitiesPage/index";
 import AboutPage from "./pages/AboutPage/index";
 import ContactPage from "./pages/ContactPage/index";
 import ReservationPage from "./pages/ReservationPage";
+import Footer from "./component/Footer/index";
 
 function App() {
   const dispatch = useDispatch();
@@ -23,15 +24,20 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/rooms/:type?" component={RoomsPage} />
-        <Route exact path="/reservation" component={ReservationPage} />
-        <Route exact path="/facilities" component={FacilitiesPage} />
-        <Route exact path="/attractions" component={AttractionsPage} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/contact" component={ContactPage} />
-      </Switch>
+      <body>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/rooms/:type?" component={RoomsPage} />
+          <Route exact path="/reservation" component={ReservationPage} />
+          <Route exact path="/facilities" component={FacilitiesPage} />
+          <Route exact path="/attractions" component={AttractionsPage} />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/contact" component={ContactPage} />
+        </Switch>
+      </body>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

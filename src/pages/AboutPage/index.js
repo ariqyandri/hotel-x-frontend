@@ -12,7 +12,7 @@ export default function AboutPage() {
   }
   return (
     <div>
-      <main>
+      <main className="page-margin">
         <DisplayAbout about={about} />
       </main>
     </div>

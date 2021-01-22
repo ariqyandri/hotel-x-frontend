@@ -14,7 +14,7 @@ export default function ContactPage() {
   const contactInfo = categories.find((c) => c.name === "Contact");
   return (
     <div>
-      <main>
+      <main className="page-margin">
         <DisplayContact contacts={contacts} contactInfo={contactInfo} />
       </main>
     </div>

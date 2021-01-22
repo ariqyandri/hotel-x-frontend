@@ -3,17 +3,16 @@ import "./DisplayContacts.css";
 
 export default function DisplayContacts({ contacts }) {
   return (
-    <div>
-      {categories.map(({ name, description, imageUrl }, i) => {
+    <div className="display-contacts">
+      {contacts.map(({ platform, info, iconUrl }, i) => {
         return (
-          <div key={i} className="display-category">
-            <div className="content-image">
-              <img src={imageUrl} alt={name} />
+          <div key={i}>
+            <div className="contact-icon">
+              <img src={iconUrl} alt={platform} />
             </div>
-            <div className="content-info">
-              <h1>{name}</h1>
-              <p>{description}</p>
-              <h4>Visit</h4>
+            <div className="contact-info">
+              <h2>{platform}</h2>
+              <p>{info}</p>
             </div>
           </div>
         );
