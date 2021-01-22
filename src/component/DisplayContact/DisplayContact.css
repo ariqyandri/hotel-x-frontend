@@ -1,22 +1,22 @@
-.display-about {
+.display-contact {
   float: left;
   width: 100%;
   position: relative;
   text-align: left;
 }
 
-.display-about .content-image {
+.display-contact .content-image {
   z-index: 1;
 }
 
-.display-about .content-image img {
+.display-contact .content-image img {
   width: 100%;
   object-fit: cover;
   min-height: 100vh;
   max-height: 100vh;
 }
 
-.display-about .content-info {
+.display-contact .content-info {
   position: relative;
   left: auto;
   bottom: auto;
@@ -36,12 +36,12 @@
   text-align: center;
 }
 
-.display-about .content-info:hover {
+.display-contact .content-info:hover {
   border: 0.1em solid white;
 }
 
 @media (max-width: 1100px) {
-  .display-about .content-info {
+  .display-contact .content-info {
     position: relative;
     left: auto;
     bottom: auto;
@@ -53,15 +53,15 @@
   }
 }
 
-.display-about .content-info h1 {
+.display-contact .content-info h1 {
   font-weight: 700;
 }
 
-.display-about .content-info h3 {
+.display-contact .content-info h3 {
   line-height: 2em;
   font-style: italic;
 }
 
-.display-about .content-info h4 {
+.display-contact .content-info h4 {
   text-transform: capitalize;
 }

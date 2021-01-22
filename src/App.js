@@ -5,7 +5,7 @@ import "./App.css";
 import "hover.css";
 import Navbar from "./component/Navbar/index";
 import HomePage from "./pages/HomePage/index";
-import { fetchCategories } from "./store/categories/action";
+import { initialFetch } from "./store/categories/action";
 import RoomsPage from "./pages/RoomsPage/index";
 import AttractionsPage from "./pages/AttractionsPage/index";
 import FacilitiesPage from "./pages/FacilitiesPage/index";
@@ -16,7 +16,7 @@ import ReservationPage from "./pages/ReservationPage";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchCategories());
+    dispatch(initialFetch());
   }, [dispatch]);
   return (
     <div className="App">

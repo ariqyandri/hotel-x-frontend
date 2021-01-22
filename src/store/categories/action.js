@@ -2,6 +2,7 @@ import { apiUrl } from "../../config/constants";
 import axios from "axios";
 import { appDoneLoading, appLoading, setMessage } from "../appState/actions";
 import { displayAbout } from "../about/action";
+import { displayContacts } from "../contacts/action";
 
 const displayCategories = (categories) => {
   return {
@@ -10,14 +11,14 @@ const displayCategories = (categories) => {
   };
 };
 
-export const fetchCategories = () => {
+export const initialFetch = () => {
   return async (dispatch, getState) => {
     dispatch(appLoading());
     try {
       const response = await axios.get(`${apiUrl}/categories`);
-      console.log("this runs");
       dispatch(displayCategories(response.data.categories));
       dispatch(displayAbout(response.data.about[0]));
+      dispatch(displayContacts(response.data.contacts));
       dispatch(appDoneLoading());
     } catch (error) {
       if (error.response) {
