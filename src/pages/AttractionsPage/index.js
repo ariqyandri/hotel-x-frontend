@@ -1,25 +1,31 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import DisplayCategory from "../../component/DisplayCategories";
-import HomeCarousel from "../../component/HomeCarousel";
-import HomeWelcome from "../../component/HomeWelcome";
 import Loading from "../../component/Loading";
-import { selectAbout } from "../../store/about/selector";
+import { fetchAttractions } from "../../store/attractions/action";
+import { selectAttractions } from "../../store/attractions/selector";
 import { selectCategories } from "../../store/categories/selector";
 
 export default function AttractionsPage() {
+  const dispatch = useDispatch;
   const categories = useSelector(selectCategories);
-  const about = useSelector(selectAbout);
+  const attractions = useSelector(selectAttractions);
+  useEffect(() => {
+    dispatch(fetchAttractions());
+  }, [dispatch]);
   if (categories.length === 0) {
     return <Loading />;
   }
+  const { name, description, imageUrl } = categories.find(
+    (c) => c.name === "Attractions"
+  );
+
   return (
-    <div>
+    <div className="attraction-page">
       <header>
-        <HomeCarousel categories={categories} />
+        <img src={imageUrl} alt={name} />
       </header>
       <main className="page-margin">
-        <HomeWelcome categories={categories} about={about} />
         <DisplayCategory categories={categories} />
       </main>
     </div>
