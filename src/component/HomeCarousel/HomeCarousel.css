@@ -23,12 +23,6 @@
   transition: font-weight 0.3s;
 }
 
-.home-carousel .carousel-item:hover h1,
-.home-carousel .carousel-item:active h1,
-.home-carousel .carousel-item:focus h1 {
-  cursor: pointer;
-}
-
 .home-carousel .carousel-item:hover p,
 .home-carousel .carousel-item:active p,
 .home-carousel .carousel-item:focus p {
@@ -39,4 +33,10 @@
 .home-carousel .carousel-item p:hover,
 .home-carousel .carousel-item p:hover {
   font-weight: bolder;
+}
+
+.home-carousel .carousel-item a:hover,
+.home-carousel .carousel-item a:hover,
+.home-carousel .carousel-item a:hover {
+  text-decoration: none;
 }

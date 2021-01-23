@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./HomeCarousel.css";
 
 export default function HomeCarousel({ categories }) {
@@ -14,7 +15,9 @@ export default function HomeCarousel({ categories }) {
               <Carousel.Caption>
                 <h1>{name}</h1>
                 <b />
-                <p>Visit Page</p>
+                <Link to={`/${name.toLowerCase()}`}>
+                  <p>Visit Page</p>
+                </Link>
               </Carousel.Caption>
             </Carousel.Item>
           );
