@@ -1,4 +1,4 @@
-# Htel X
+# Hotel X
 
 This project is an assignment as a part of the job application process for the Junior Web Developer position at Key Hospitality. The assignment is to create a draft website for Hotel X, in order to build its online presence to clients and guests. 
 
