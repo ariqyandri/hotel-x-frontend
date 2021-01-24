@@ -26,25 +26,25 @@ Open https://hotel-x.netlify.app/ to view it in the browser.
 ### Loading Time
 
 #### Home Page
-[home](https://res.cloudinary.com/doai9yryh/image/upload/v1611507839/home_rgfy7y.png)
+![home](https://res.cloudinary.com/doai9yryh/image/upload/v1611507839/home_rgfy7y.png)
 
 #### Rooms Page
-[rooms](https://res.cloudinary.com/doai9yryh/image/upload/v1611507841/rooms_yd7dqt.png)
+![rooms](https://res.cloudinary.com/doai9yryh/image/upload/v1611507841/rooms_yd7dqt.png)
 
 #### reservation Page
-[reservation](https://res.cloudinary.com/doai9yryh/image/upload/v1611507827/reservation_v7snzx.png)
+![reservation](https://res.cloudinary.com/doai9yryh/image/upload/v1611507827/reservation_v7snzx.png)
 
 #### facilities Page
-[facilities](https://res.cloudinary.com/doai9yryh/image/upload/v1611507839/facilities_twboy7.png)
+![facilities](https://res.cloudinary.com/doai9yryh/image/upload/v1611507839/facilities_twboy7.png)
 
 #### attractions Page
-[attractioins](https://res.cloudinary.com/doai9yryh/image/upload/v1611507835/attractions_nksfov.png)
+![attractioins](https://res.cloudinary.com/doai9yryh/image/upload/v1611507835/attractions_nksfov.png)
 
 #### about Page
-[about](https://res.cloudinary.com/doai9yryh/image/upload/v1611507835/about_hde1gv.png)
+![about](https://res.cloudinary.com/doai9yryh/image/upload/v1611507835/about_hde1gv.png)
 
 #### contact Page
-[contact](https://res.cloudinary.com/doai9yryh/image/upload/v1611507817/contact_ogo7yl.png)
+![contact](https://res.cloudinary.com/doai9yryh/image/upload/v1611507817/contact_ogo7yl.png)
 
 
 
