@@ -1,8 +1,8 @@
-# HOtel X
+# Htel X
 
 This project is an assignment as a part of the job application process for the Junior Web Developer position at Key Hospitality. The assignment is to create a draft website for Hotel X, in order to build its online presence to clients and guests. 
 
-Open [https://hotel-x.netlify.app/](HOTEL x) to view it in the browser.
+Open https://hotel-x.netlify.app/ to view it in the browser.
 
 ## Tools and Tech
 
