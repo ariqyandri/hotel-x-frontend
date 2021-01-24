@@ -31,19 +31,19 @@ Open https://hotel-x.netlify.app/ to view it in the browser.
 #### Rooms Page
 ![rooms](https://res.cloudinary.com/doai9yryh/image/upload/v1611507841/rooms_yd7dqt.png)
 
-#### reservation Page
+#### Reservation Page
 ![reservation](https://res.cloudinary.com/doai9yryh/image/upload/v1611507827/reservation_v7snzx.png)
 
-#### facilities Page
+#### Facilities Page
 ![facilities](https://res.cloudinary.com/doai9yryh/image/upload/v1611507839/facilities_twboy7.png)
 
-#### attractions Page
+#### Attractions Page
 ![attractioins](https://res.cloudinary.com/doai9yryh/image/upload/v1611507835/attractions_nksfov.png)
 
-#### about Page
+#### ABout Page
 ![about](https://res.cloudinary.com/doai9yryh/image/upload/v1611507835/about_hde1gv.png)
 
-#### contact Page
+#### Contact Page
 ![contact](https://res.cloudinary.com/doai9yryh/image/upload/v1611507817/contact_ogo7yl.png)
 
 
