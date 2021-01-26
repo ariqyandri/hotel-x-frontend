@@ -52,7 +52,6 @@
   font-weight: 700;
 }
 
-
 .display-category .content-info:hover {
   border: 0.1em solid black;
 }
@@ -79,5 +78,22 @@
 @media (max-width: 1100px) {
   .display-category .content-image {
     width: 96%;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-category .content-info h1 {
+    font-size: 1.5em;
+  }
+
+  .display-category .content-info h3,
+  .display-category .content-info h4 {
+    font-size: 1em;
+  }
+  .display-category .content-info p {
+    font-size: 0.8em;
+  }
+  .display-category .content-info {
+    padding: 2em 2em;
   }
 }

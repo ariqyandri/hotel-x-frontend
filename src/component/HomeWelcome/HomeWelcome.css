@@ -17,7 +17,32 @@
 .home-contact {
   display: flex;
   justify-content: space-around;
+  margin: 0 1em;
 }
 .home-contact h4 {
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .welcome > h1 {
+    font-size: 1.5em;
+  }
+
+  .home-contact h4 {
+    font-size: 1.2em;
+  }
+
+  .welcome > p,
+  .welcome .home-contact {
+    font-size: 0.8em;
+  }
+
+  .welcome .home-contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .welcome {
+    margin: 2em;
+  }
 }
