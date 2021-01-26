@@ -66,3 +66,9 @@ main .navbar-light .navbar-nav .nav-link.active {
     font-size: 4rem;
   }
 }
+
+.navbar-light .navbar-toggler {
+  background-color: white;
+  border: none;
+  box-shadow: 0.05em 0.05em 0.1em black;
+}
