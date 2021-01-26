@@ -3,7 +3,7 @@ import "./DisplayAttractions.css";
 
 export default function DisplayAttractions({ attractions }) {
   return (
-    <div>
+    <>
       {attractions.map(
         ({ name, description, address, linkUrl, imageUrl }, i) => {
           return (
@@ -23,6 +23,6 @@ export default function DisplayAttractions({ attractions }) {
           );
         }
       )}
-    </div>
+    </>
   );
 }

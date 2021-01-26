@@ -98,3 +98,21 @@
     width: 96%;
   }
 }
+
+@media (max-width: 768px) {
+  .display-rooms .content-info h1 {
+    font-size: 1.5em;
+  }
+
+  .display-rooms .content-info h3,
+  .display-rooms .content-info h4 {
+    font-size: 1em;
+  }
+  .display-rooms .content-info p,
+  .display-rooms .content-info li {
+    font-size: 0.8em;
+  }
+  .display-rooms .content-info {
+    padding: 2em 2em;
+  }
+}

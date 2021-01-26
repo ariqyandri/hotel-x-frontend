@@ -4,7 +4,7 @@ import "./DisplayCategory.css";
 
 export default function DisplayCategory({ categories }) {
   return (
-    <div>
+    <>
       {categories.map(({ name, description, imageUrl }, i) => {
         return (
           <div key={i} className="display-category">
@@ -21,6 +21,6 @@ export default function DisplayCategory({ categories }) {
           </div>
         );
       })}
-    </div>
+    </>
   );
 }

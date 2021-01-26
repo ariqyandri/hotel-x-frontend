@@ -14,7 +14,6 @@ export const fetchRooms = () => {
     dispatch(appLoading());
     try {
       const response = await axios.get(`${apiUrl}/rooms`);
-      console.log(response.data);
       dispatch(displayRooms(response.data));
       dispatch(appDoneLoading());
     } catch (error) {

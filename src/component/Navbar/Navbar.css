@@ -22,7 +22,7 @@ main .navbar-brand {
 nav h1 {
   text-shadow: 0.05em 0.05em 0.1em black;
   color: white;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
@@ -62,4 +62,13 @@ main .navbar-light .navbar-nav .nav-link.active {
   .navbar-expand-md .navbar-nav {
     justify-content: flex-end;
   }
+  nav h1 {
+    font-size: 4rem;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  background-color: white;
+  border: none;
+  box-shadow: 0.05em 0.05em 0.1em black;
 }

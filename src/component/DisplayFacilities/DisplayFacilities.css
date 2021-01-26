@@ -71,3 +71,16 @@
     width: 96%;
   }
 }
+
+@media (max-width: 768px) {
+  .display-facilities .content-info h1 {
+    font-size: 1.5em;
+  }
+
+  .display-facilities .content-info p {
+    font-size: 0.8em;
+  }
+  .display-facilities .content-info {
+    padding: 2em 2em;
+  }
+}

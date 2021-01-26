@@ -29,11 +29,26 @@
   text-align: end;
 }
 
-
 .footer section:nth-child(2) a {
   color: gray;
 }
 
 .footer-info p {
   text-align: start;
+}
+
+@media (max-width: 768px) {
+  .footer h1 {
+    font-size: 1.5em;
+  }
+  .footer p {
+    font-size: 0.8em;
+  }
+  .footer section {
+    max-width: 45%;
+  }
+  .footer-contacts p {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

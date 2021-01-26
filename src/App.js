@@ -31,7 +31,7 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <body>
+      <main>
         <ScrollToTop />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -42,7 +42,7 @@ function App() {
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/contact" component={ContactPage} />
         </Switch>
-      </body>
+      </main>
       <footer>
         <Footer />
       </footer>

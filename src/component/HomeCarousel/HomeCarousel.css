@@ -40,3 +40,13 @@
 .home-carousel .carousel-item a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .home-carousel .carousel-item h1 {
+    font-size: 2em;
+  }
+
+  .home-carousel .carousel-item p {
+    font-size: 1.6em;
+  }
+}

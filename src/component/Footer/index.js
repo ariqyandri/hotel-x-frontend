@@ -26,7 +26,7 @@ export default function Footer() {
             );
           })}
         </section>
-        <section>
+        <section className="footer-contacts">
           {contacts.map(({ platform, info, linkUrl }, i) => {
             if (platform === "Telephone" || platform === "Email") {
               return null;
