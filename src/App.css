@@ -1,5 +1,5 @@
 .App,
-.App body {
+.App main {
   text-align: center;
   font-family: "Bodoni Moda", serif;
 }
@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-body p {
+main p {
   font-family: "Work Sans", sans-serif;
 }
 
