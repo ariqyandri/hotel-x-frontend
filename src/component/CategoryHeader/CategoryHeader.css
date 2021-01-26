@@ -41,13 +41,7 @@
     top: 120px;
     right: 4%;
     left: 4%;
-  }
-}
-
-@media (max-width: 768px) {
-  .category-header .content-image img {
-    max-height: unset;
-    min-height: 50vh;
+    max-height: 40vh;
   }
 }
 
@@ -55,11 +49,16 @@
   font-weight: 700;
 }
 
-.category-header .content-info h3 {
-  line-height: 2em;
-  font-style: italic;
+.category-header .content-info p {
+  overflow-y: scroll;
 }
 
-.category-header .content-info h4 {
-  text-transform: capitalize;
+@media (max-width: 768px) {
+  .category-header .content-image img {
+    max-height: unset;
+    min-height: 65vh;
+  }
+  .category-header .content-info h1 {
+    font-size: 1.5em;
+  }
 }
