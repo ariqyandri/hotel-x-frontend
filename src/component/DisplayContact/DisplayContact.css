@@ -41,7 +41,12 @@
     top: 120px;
     right: 4%;
     left: 4%;
+    max-height: 75vh;
   }
+}
+
+.display-contact .content-info > section {
+  overflow-y: scroll;
 }
 
 .display-contact .content-info h1 {
@@ -55,4 +60,18 @@
 
 .display-contact .content-info h4 {
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .display-contact .content-info h1 {
+    font-size: 1.5em;
+  }
+
+  .display-contact .content-info h3,
+  .display-contact .content-info h4 {
+    font-size: 1em;
+  }
+  .display-contact .content-info p {
+    font-size: 0.8em;
+  }
 }

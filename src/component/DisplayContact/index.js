@@ -14,7 +14,9 @@ export default function DisplayContact({ contacts, contactInfo }) {
           <div className="content-info">
             <h1>Contact Us</h1>
             <p>{description}</p>
-            <DisplayContacts contacts={contacts} />
+            <section>
+              <DisplayContacts contacts={contacts} />
+            </section>
           </div>
         </div>
       </div>
