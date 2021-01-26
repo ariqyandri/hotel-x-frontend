@@ -61,4 +61,7 @@
   .category-header .content-info h1 {
     font-size: 1.5em;
   }
+  .category-header .content-info p {
+    font-size: 0.8em;
+  }
 }
