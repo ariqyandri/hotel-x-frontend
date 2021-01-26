@@ -4,7 +4,7 @@ import "./DisplayRooms.css";
 
 export default function DisplayRooms({ rooms }) {
   return (
-    <div>
+    <>
       {rooms
         .sort((a, b) => a.id - b.id)
         .map(({ name, description, priceEuro, roomImages, facilities }, i) => {
@@ -39,6 +39,6 @@ export default function DisplayRooms({ rooms }) {
             </div>
           );
         })}
-    </div>
+    </>
   );
 }

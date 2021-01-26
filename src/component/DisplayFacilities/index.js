@@ -3,7 +3,7 @@ import "./DisplayFacilities.css";
 
 export default function DisplayFacilities({ facilities }) {
   return (
-    <div>
+    <>
       {facilities.map(({ name, description, imageUrl }, i) => {
         return (
           <div key={i} className="display-facilities">
@@ -17,6 +17,6 @@ export default function DisplayFacilities({ facilities }) {
           </div>
         );
       })}
-    </div>
+    </>
   );
 }

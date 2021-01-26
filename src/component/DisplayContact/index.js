@@ -5,7 +5,7 @@ import "./DisplayContact.css";
 export default function DisplayContact({ contacts, contactInfo }) {
   const { name, description, imageUrl } = contactInfo;
   return (
-    <div>
+    <>
       <div className="display-contact">
         <div className="content-image">
           <img src={imageUrl} alt={name} />
@@ -18,6 +18,6 @@ export default function DisplayContact({ contacts, contactInfo }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
